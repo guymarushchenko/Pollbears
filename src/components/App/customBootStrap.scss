@@ -1,0 +1,14 @@
+$theme-colors: (
+  "primary": #5D80B6,
+  "secondary": #ACBDD3,
+  "third": #F7F8F9 
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1600px
+) !default;
+
+@import '~bootstrap/scss/bootstrap.scss';
