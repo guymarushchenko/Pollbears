@@ -37,7 +37,7 @@ const useHttp = () => {
         dispatchHttp({ type: 'SEND' });
         fetch('http://localhost:5000/' + url, {
             method: method,
-            body: body,
+            body: JSON.stringify(body),
             headers: {
                 'Content-Type': 'application/json'
             }

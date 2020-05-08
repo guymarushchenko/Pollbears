@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Post from '../Post/Post'
 import useHttp from '../../hooks/http';
-import Modal from 'react-bootstrap4-modal';
 
 
 const HomePage = () => {
     const [postsState, setPostsState] = useState([]);
-    const [userManagement, setUserManagement] = useState({ showLoginModal: false, showSignUpModal: true });
     const { data, sendRequest } = useHttp();
 
     useEffect(() => {
@@ -24,7 +22,6 @@ const HomePage = () => {
             <div className="container text-center">
                 {(data) ? posts : null}
             </div>
-
         </React.Fragment>
     );
 };
